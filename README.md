@@ -1,10 +1,10 @@
-This is a breafing notes about main Git and GitHub commands. You can use it when you forget some og them.
+This is a breafing notes about main Git and GitHub commands. You can use it when you forget some of them.
 Let's start from some basic bash commands, which can help you to work with your machine throught the terminal.
-- Check where are you now on your machune:
+- Check where are you now on your machine:
 ```bash
 $ pwd
 ```
-- Change the direction:
+- Change the directory:
 ```bash
 $ cd 'new_path'
 ```
@@ -24,7 +24,7 @@ $ rm 'file_name'
 ```bash
 $ rm -rf 'folder_name'
 ```
-======================================
+---
 Now we are ready to do some Git things
 ## Making new repository
 - Initialize repository:
@@ -35,6 +35,7 @@ $ git init 'project_name'
 ```bash
 $ git clone 'url_of_the_project'
 ```
+---
 ## State of your repository:
 - List of uncommited files:
 ```bash
@@ -72,7 +73,7 @@ git log
 ```bash
 git log -p 'file_or_folder_name'
 ```
-===================================
+---
 ## Work with branches
 - A list of local branches:
 ```bash
@@ -102,7 +103,7 @@ $ git chechout b && git merge a
 ```bash
 $ git tag 'tag_name'
 ```
-============================
+---
 ## Save changes
 - Add file to an index:
 ```bash
@@ -128,7 +129,7 @@ $ git reset 'file_name'
 ```bash
 $ git reset --hard
 ```
-===============================
+---
 ## Update
 - Download changes from the remote repository:
 ```bash
@@ -146,9 +147,9 @@ $ git pull --rebase
 ```bash
 $ git push
 ```
-================================
+---
 ## And the main ones!
 - Don't forget to use help
 ```bash
-$ git 'command's_name' --help
+$ git 'commands_name' --help
 ```
