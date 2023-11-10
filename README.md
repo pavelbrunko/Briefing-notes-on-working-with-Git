@@ -67,21 +67,21 @@ $ git show hash:file
 ```  
 - List of commits:
 ```bash
-git log
+$ git log
 ```
 - Show the story of changes, including diffs:
 ```bash
-git log -p 'file_or_folder_name'
+$ git log -p 'file_or_folder_name'
 ```
 ---
 ## Connect remote and local repository
 - Bind a remote repository to a local one:
 ``` bash
-git remote add origin 'github_ssh_key'
+$ git remote add origin 'github_ssh_key'
 ```
 - Check if the repositories are connected:
 ``` bash
-git remote -v
+$ git remote -v
 ```
 ---
 ## Work with branches
