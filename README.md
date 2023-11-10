@@ -74,6 +74,16 @@ git log
 git log -p 'file_or_folder_name'
 ```
 ---
+## Connect remote and local repository
+- Bind a remote repository to a local one:
+``` bash
+git remote add origin 'github_ssh_key'
+```
+- Check if the repositories are connected:
+``` bash
+git remote -v
+```
+---
 ## Work with branches
 - A list of local branches:
 ```bash
