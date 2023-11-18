@@ -73,6 +73,10 @@ $ git log
 ```bash
 $ git log -p 'file_or_folder_name'
 ```
+- Call an abbreviated log:
+```bash
+$ git log --oneline
+```
 ---
 ## Connect remote and local repository
 - Bind a remote repository to a local one:
@@ -162,4 +166,13 @@ $ git push
 - Don't forget to use help
 ```bash
 $ git 'commands_name' --help
+```
+___
+## Life-cycle of the project in GitHub
+```mermaid
+graph LR;
+Untracted -- "git add" --> Staged+Tracked
+Staget+Tracked -- "git commit" --> Tracked
+Tracked -- "changes" --> Modified
+Modified -- "git add" --> Staged+Tracked
 ```
