@@ -10,19 +10,19 @@ $ cd 'new_path'
 ```
 - Make a folder:
 ```bash
-$ mkdir 'folder_name'
+$ mkdir <folder_name>
 ```
 - Make a .txt file:
 ```bash
-$ touch 'file_name.txt'
+$ touch <file_name.txt>
 ```
 - Remove file:
 ```bash
-$ rm 'file_name'
+$ rm <file_name>
 ```
 - Remove folder:
 ```bash
-$ rm -rf 'folder_name'
+$ rm -rf <folder_name>
 ```
 ---
 Now we are ready to do some Git things
@@ -40,6 +40,10 @@ $ git clone 'url_of_the_project'
 - List of uncommited files:
 ```bash
 $ git status
+```
+- List of uncommited files + igrored files:
+```bash
+$ git status --ignored
 ```
 - Changes, which still don't added to file's index:
 ```bash
@@ -59,7 +63,7 @@ $ git diff hash1 hash2
 ```
 - Receive the dates of the changes and their authers:
 ```bash
-$ git blame 'file_name'
+$ git blame <file_name>
 ```
 - Receive a list of changes in file in certain commit:
 ```bash
@@ -71,7 +75,7 @@ $ git log
 ```
 - Show the story of changes, including diffs:
 ```bash
-$ git log -p 'file_or_folder_name'
+$ git log -p <file_or_folder_name>
 ```
 - Call an abbreviated log:
 ```bash
@@ -121,7 +125,7 @@ $ git tag 'tag_name'
 ## Save changes
 - Add file to an index:
 ```bash
-$ git add 'file_name'
+$ git add <file>
 ```
 - Add all files in the folder:
 ```bash
@@ -143,13 +147,21 @@ $ git commit --amend --no-edit
 ```bash
 $ git commit --amend -m 'new_message'
 ```
+- Perform unstage of changes (delete the file):
+```bash
+$ git restore --staged <file_name>
+```
+- Delete changes in file:
+```bash
+$ git restore <file_name>
+```
 - Delete changed file from the index, leaving changes in it:
 ```bash
-$ git reset 'file_name'
+$ git reset <file_name>
 ```
 - Cancel all changes in the folder and return to the last commit:
 ```bash
-$ git reset --hard
+$ git reset --hard <commit hash>
 ```
 ---
 ## Update
