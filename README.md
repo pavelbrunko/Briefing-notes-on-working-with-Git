@@ -168,7 +168,7 @@ $ git push
 $ git 'commands_name' --help
 ```
 ___
-## Life-cycle of the project in GitHub
+## Life-cycle of the files in project on GitHub
 ```mermaid
 graph LR;
 Untracted -- "git add" --> Staged+Tracked
