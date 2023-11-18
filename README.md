@@ -135,6 +135,14 @@ $ git commit -m 'your_message'
 ```bash
 $ git commit -am 'your_message'
 ```
+- Edit the last commit:
+```bash
+$ git commit --amend --no-edit
+```
+- Change the message in the last commit:
+```bash
+$ git commit --amend -m 'new_message'
+```
 - Delete changed file from the index, leaving changes in it:
 ```bash
 $ git reset 'file_name'
