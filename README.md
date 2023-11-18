@@ -171,8 +171,8 @@ ___
 ## Life-cycle of the project in GitHub
 ```mermaid
 graph LR;
-[Untracted] -- "git add" --> (Staged+Tracked)
-Staged+Tracked -- "git commit" --> {Tracked}
-Tracked -- "changes" --> [Modified]
+Untracted -- "git add" --> Staged+Tracked
+Staged+Tracked -- "git commit" --> Tracked
+Tracked -- "changes" --> Modified
 Modified -- "git add" --> Staged+Tracked
 ```
