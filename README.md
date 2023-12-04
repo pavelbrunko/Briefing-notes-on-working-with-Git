@@ -121,6 +121,14 @@ $ git chechout b && git merge a
 ```bash
 $ git tag 'tag_name'
 ```
+- Merge branches:
+```bash
+$ git merge mybranch
+```
+- Delete branch after merging:
+```bash
+$ git branch -D mybranch
+```
 ---
 ## Save changes
 - Add file to an index:
@@ -180,6 +188,10 @@ $ git pull --rebase
 - Send local commits to remote repository:
 ```bash
 $ git push
+```
+- Forced pushing:
+```bash
+$ git push --force
 ```
 ---
 ## And the main ones!
