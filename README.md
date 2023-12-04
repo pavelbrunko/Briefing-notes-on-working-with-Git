@@ -208,3 +208,11 @@ Staged+Tracked -- "git commit" --> Tracked
 Tracked -- "changes" --> Modified
 Modified -- "git add" --> Staged+Tracked
 ```
+___
+## Feature branch workflow
+
+The most popular approach to working with Git in a team is feature branch workflow. It creates a branch for each task (for example, for new functionality or bug fixes), and when everything is ready, they pour a new branch into main.
+
+The important stages of this process are the pool request and the review of changes. The request pool is an interface where you can discuss changes. A review is a review of changes by other participants and one of the ways to check the quality of such changes.
+
+If you are already a member of the project (or a collaborator in GitHub terms), you can clone the repository directly. And if not, you need to make a "fork" beforehand. The Merge button is also available for participants after the review, but not for non—participants.
